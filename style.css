@@ -97,6 +97,26 @@ nav a {
 
 /* Add/modify CSS rules as needed */
 
+.scrolling-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  font-size: 24px; /* Increase font size */
+  white-space: nowrap; /* prevent text from wrapping */
+  overflow: hidden;
+  animation: scrollText 20s linear infinite; /* adjust timing as needed */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Add/modify CSS rules as needed */
 
 .content {
